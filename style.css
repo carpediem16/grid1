@@ -1,0 +1,99 @@
+.containerz {
+    padding: 100px 30px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    background: cyan;
+    z-index: -10;
+    }
+    .image-stack {
+    position: relative;
+    width: 100%;
+    }
+    .image-stack__item--bottom {
+    position: relative;
+    left: 460px;
+    top: 0;
+    width: 50%; /* ancho arbitrarío*/
+    z-index: -1;
+    }
+    .image-stack__item--bottom img{
+        height: 500px;
+    object-fit: cover;
+    }
+    .image-stack__item--top {
+        position: absolute;
+    padding-top: 10px; /* valor arbitrario*/
+    padding-right: 20%; /* valor arbitrario*/
+        top: 30px;
+    left: 165px;
+    width: 40%; /* valor arbitrario*/
+    z-index: 2;
+    }
+    .image-stack__item--top img {
+    height: 350px;
+    object-fit: cover;
+    } */
+
+.container{
+    position: absolute;
+}
+
+.item1 {
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    width: 50%;
+    margin: 10px;
+    left: 120px;
+    background-image: url(/img/crishombros2.jpg);
+  }
+  
+  .item2 {
+    position: absolute;
+    z-index: 3; /* gray box will be above both green and black box */
+    background: lightgray;
+    height: 60px;  
+    width: 70%;
+    left: 50px;
+    top: 50px;
+  }
+
+.flex-container{
+    /* width: 300px; */
+    /* height: 300px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(autofit, 280px); */
+display: flex;
+gap: 5px;
+flex-wrap: wrap;
+}
+.item img{
+    height: 400px;
+    /* width: 350px; */
+    /* width: 100%; */
+    object-fit: cover;
+
+}
+p{
+    font-size: 2rem;
+}
+.flex-container p{
+    font-size: 2rem;
+}
+.item:nth-child(14){
+    background-color: rgb(192, 247, 247);
+    padding: 10px;
+}
+.item:nth-child(odd){
+    background-color: rgb(192, 247, 247);
+    padding: 10px;
+}
+.item:nth-child(even){
+    background-color: rgb(192, 247, 247);
+    padding: 10px;
+}
+
+  
